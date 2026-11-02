@@ -1,0 +1,24 @@
+{
+  "name": "o-ring-groove-calc",
+  "version": "1.0.0",
+  "description": "Check O-ring gland squeeze, fill, and stretch from millimetre dimensions",
+  "license": "MIT",
+  "author": "shanguoao2026-web",
+  "type": "module",
+  "bin": {
+    "o-ring-groove-calc": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node test/calc.test.js",
+    "start": "node dist/cli.js",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "^5.0.0"
+  }
+}
